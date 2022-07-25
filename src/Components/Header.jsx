@@ -4,9 +4,9 @@ import { globalContext } from "../App";
 
 export default function Header(){
 
-    const path = window.location.href;
+    const path = window.location.pathname;
     return <div>
-        {path === "http://localhost:3000/"? <Link 
+        {path === "/"? <Link 
         to="/favorite"
         id="btnFavorite"
         >
